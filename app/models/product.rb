@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-    validates :name, :product ,presence: true
+    validates :name, :price ,presence: true
 
     def to_s 
         name
