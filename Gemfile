@@ -8,7 +8,7 @@ gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use postgresql as the database for Active Record
 group :production do
   gem 'pg'
-  # gem 'rails_12factor'
+  gem 'rails_12factor'
  end
 # gem 'pg', '~> 1.1' group: [:development, :production]
 # Use Puma as the app server
