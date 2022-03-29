@@ -6,9 +6,13 @@ ruby '2.6.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+group :production do
+  gem 'pg'
+  # gem 'rails_12factor'
+ end
+# gem 'pg', '~> 1.1' group: [:development, :production]
 # Use Puma as the app server
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 5.0' 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
